@@ -1,0 +1,816 @@
+                    Apostila Linux Básico
+
+Figura 1: Wilmar Borges Leal Junior
+Sumário
+Introdução ao Linux..................................3
+Exercícios................................................................4
+Estrutura de Diretório no sistema linux................................5
+Exercícios.........................................................6
+Iniciando nos comandos no linux.....................................7
+Conceito Geral...................................................7
+Usaremos o BASH em nossas aulas.............................8
+Acessando o Terminal....................................8
+Um pouco sobre o superusuário ROOT........................9
+Iniciando o terminal...............................................9
+Iniciando no modo shell com comandos simples..............10
+Lista de Comandos Básicos.................................10
+Documentação ( Ajuda muito na hora da prova prática )...........10
+Data e Hora...............................................11
+Informações do Sistema (Hardware e Processos)......................11
+Outros comandos Básicos do linux.............................13
+Exercícios...........................................................16
+[tar] empacotamento do arquivo e não compactação de arquivos........18
+Criando vários diretórios e/ou arquivos no Linux.............19
+Exercícios.........................................................20
+Para pesquisar: Desafio..............................................21
+Manipulação de arquivos e diretórios..............................22
+Tipos de Arquivos.............................................22
+Comandos básicos necessários para manipular arquivos e diretórios....................................................24
+Link Simbólico e HardLink, ainda manipulando arquivos e diretórios...................................................26
+Exercícios.....................................................27
+Permissões de Arquivos e Diretórios no Linux..........29
+Permissões:...............................................................29
+Bits de atributo.................................................................30
+Bits de proteção....................................................31
+Alterar permissões de Arquivos e pastas/diretórios..................32
+Exercícios...................................................33
+Bibliografia Básica......................................................35
+3 de 35
+
+
+Introdução ao Linux
+Olá Pessoal, alunos, amigos companheiros; meu nome é Wilmar Borges Leal Junior, iremos
+trabalhar a introdução ao sistema linux.
+
+Iniciamos o curso de informática aplicada, linux, trabalharemos com a essência do linux,
+nada muito complicado, você pode achar muitas apostilas em vários sites na internet, será
+praticamente 40 encontros, no ano, 10 por bimestre, muito pouco, para aqueles que só estudarão em
+sala de aula, uma diga, o estudo em casa é essencial para o aprendizado.
+ Estou elaborando essa apostila para facilitar os estudos, mesmo assim, você pode e deve
+procurar materiais na internet, livros, revistas especializadas ir na biblioteca, ler muito, muito
+mesmo, para aprimorar os conhecimentos, como é um curso básico, introdutório ao sistema GNU linux,
+vamos trabalhar diversos comandos, sim comandos, você deve está pensando, porque
+utilizar comandos professores, se estamos na era das "janelas", "botões", touch e até comandos de
+voz, isso não está ultrapassado?, respondo, não!, você verá […]
+Quando um sistema já vem com botões isso quer dizer que cada botãozinho já é pré-programado, ou seja,
+a opção é limitada ao o que o programador programou previamente.
+Agora, quando você usa linha de comando as opções são infinitas, pois você pode combinar
+inúmeros comandos em uma linha ou colocar tudo em um contêiner [script] para automatizar
+processos. Como estamos em um curso de computação, então, temos que aprender como funciona
+a máquina e não apenas pegar o produto pronto e usar. Então vamos ao que interessa.
+Figura 2: História do Linux Figura 3: Inforgrafico SO 4 de 35
+
+Exercícios
+1. O que vem a ser um sistema livre?
+a. Faça uma rápida pesquisa e cite 3 Sistemas livres.
+2. O que vem a ser um usuário root e usuário comum no linux
+3. Explique o que vem a ser:
+a. GPL
+b. CopyLeft
+c. Shareware
+d. copyright
+4. Como foi desenvolvido e como é mantido o Linux?
+5. O que é uma distribuição linux, “distro-linux”
+a. Cite 5 distribuições
+6. Qual a relação do projeto GNU com o Linux? Explique.
+7. Como e onde podemos adquirir uma cópia do Linux?
+8. Pesquise na internet e cite 5 lugares em que se usa Linux e, porque o linux foi adotado
+nesses lugares
+9. O que é workstation e server ?
+10. Cite duas características do Linux que justificam o uso em servidores.
+11. O que é e qual a finalidade do Projeto GNU?
+12. O que vem a ser o kernel (núcleo) do Linux?
+a. Onde o Kernel do linux é usado atualmente, cite 2 exemplos
+13. Como identificar se uma versão do Linux é estável ou está em desenvolvimento?
+14. O que é o Shell?
+15. O que vem a ser GUI e CLI
+16. O que é um sistema multitarefa?
+17. O que é um sistema mono tarefa?
+18. O que significa o termo multiusuário?
+19. O que vem a ser partições no Linux
+20. Quais as partições mais usadas no Linux, cite 35 de 35 Estrutura de Diretório
+ no sistema linux Parte em construção ….Figura 4: Estrutura de diretórios 6 de 35
+
+Exercícios
+
+1. O que vem a ser FHS Filesystem Hierarchy Standard no Linux?
+2. O o que difere o FHS do Linux para o Windows, como se organiza os diretórios no
+Windows
+3. O que vem a ser uma formatação física e formatação lógica, explique
+4. Onde fica localizado o diretório padrão do usuário no Linux,
+5. O que vem a ser o usuário root no Linux?
+6. O que é uma tecnologia embargada? Cite 3 dispositivos embargados que usam linux
+7. O que é bootloader ?
+8. O Linux é um sistema mono tarefa ou multitarefa? Explique
+9. O Linux é um sistema monousuário ou multiusuário? Explique
+10. Um pendrive formatado com NTFS pode ser lido em um Sistema operacional linux Ext3 ?
+Explique
+11. Um pendrive formatado com ReiserFS pode ser lido em um sistema windows formatado em
+FAT32 ? Explique
+12. Posso copiar um filme em formato de video .avi com 6 Gb para um HD formatado com
+sistema de arquivos FAT32 ? Explique, posso copiar o mesmo vídeo para um HD formatado
+para Ext3, Explique
+13. Posso navegar na internet com sistema operacional linux? Explique
+14. ( ver sobre as camadas do modelo TCP/IP )
+15. posso usar chamada de voz sobre computadores com linux? Ou seja fazer uma ligação de
+computador com linux para um telefone? ( ver sobre VoIP )
+16. Quais os motivos que levam a um usuário comum, residencial, não usar linux?
+17. Quais os motivos que levam uma empresa a adotar o sistema linux
+18. Onde se usa base octal no linux?
+19. Onde se usa a base Hexadecimal no linux?
+20. Onde se usa a base Binária no linux?
+21. O que vem a ser no linux o sistema CLI e GUI, qual a diferença ?
+22. O que se pode fazer com o CLI que é impossivel fazer com GUI ?
+23. O que vem a ser um PID de um processo?
+24. O que é o KDE e o GNOME
+25. o que é um terminal TTY?
+26. Como acessar o TTY3?
+27. Qual a diferença entre, usuário comum no linux e usuário root?
+28. No shell do linux, como saber se o usuário que está logado é o root ou usuário comum,
+faz-se necessário algum comando, se sim, qual, se não, como?
+29. Tenho um computador com ubuntu 16.x instalado, posso instalar uma maquina virtual com
+ubuntu 16.x sobre a maquina fisica já, como ubuntu 16.x instalado?
+30. Pesquise sobre: partições primarias, estendidas e logicas
+31. no linux, o que são permissões?
+32. No linux, qual a diferença entre usuário e grupo de usuários?
+7 de 35
+
+
+Iniciando nos comandos no linux.
+Depois de iniciarmos as aulas expositivas, vamos para o que interessa na aula, a prática.
+O que precisamos saber para iniciar?
+Bem, existem vários tipos de terminais, mas, primeiro o que é um terminal ?
+Terminal ou console é um emulador de linha ou prompt de comando, onde todos os
+comandos são emitidos em texto puro.
+É equivalente ao prompt do DOS no Windows
+Conceito Geral
+Figura 5: Termial linux,introdução 8 de 35
+Uma maneira bastante comum de automatizar procedimento é utilizar o interpretador de
+comandos do shell1
+ para escrever programas e/ou scripts. Um script contem sequências de
+comandos que seriam executados no shell interativo, permitindo que tarefas longas, repetitivas ou
+que exijam cuidados sejam executadas de maneira rápida e invariável.
+Existem muitos shells, cada um com variação em uma linguagem de programação. A
+maioria ( com exceção do C shell) tem sua linguagem de programação derivada do Bourne shell. Os
+Shells mais comuns são:
+Bourne Shell (sh): é um shell simples e encontrado em qualquer sistema Unix ou Linux.
+Bourne-Again shell (Bash): é o shell padrão da maioria das distros linux. Sua sintaxe é um
+superconjunto da linguagem definida pelo Bourne Shell, com elementos provenientes de ouros
+shells como o Kron e o C Shell e extensões proprias.
+Kron shell (ksh): é um shell com mais recursos que o Bourne Shell.
+Z shell (zsh): é um shell similar ao Korn shell, com muitos recursos adicionais
+C shell (csh): é um shell com sintaxe diferente do Bourne Shell, proveniente do BSD. O tcsh é uma
+versão com melhorias do csh
+Usaremos o BASH em nossas aulas.
+#!bin/bash
+Acessando o Terminal
+No laboratório, usaremos o ubuntu, na maquina fisica ou virtualizado. ( nessa parte já
+teremos instalado o linux em máquinas virtuais ) aula prática.
+Na interface grafica do ubuntu, vá na barra de pesquisa e pesquise por [Terminal], clique e
+abra-o, você verá algo assim:
+1 O termo técnico SHELL , em computação, é considerado genericamente a camada externa entre o usuário e o
+kernel (núcleo) de um sistema operacional
+9 de 35
+uma telinha preta com o nome do usuário logado @ separado pelo nome do computador seguido de
+[$] cifrão, indicando que você está logado como usuário comum, ou seja, aquele usuário que é
+limitado para usar o shell, usuário não administrador.
+Para logar no terminal basta digitar o comando:
+su e em seguida a senha do usuário root
+ou
+sudo -i e em seguida a senha do usuário root
+o que é a opção -i ? man sudo
+Um pouco sobre o superusuário ROOT2
+Como não poderia deixar de ser, o Linux "vê" o usuário root como algo especial, já que ele
+(na verdade, qualquer usuário que tenha UID igual a 0) pode alterar a configuração do sistema,
+configurar interfaces de rede, manipular usuários e grupos, alterar a prioridades de processos, entre
+outros.
+Por ser tão poderoso, o usuário root é perigoso. Por isso, ele só deve ser usado em situações que não
+podem ser trabalhadas por usuários que não possuem privilégios de super usuário. Imagine, por
+exemplo, que você está trabalhando com o usuário root. Ao atender uma solicitação de emergência,
+você saiu da frente do computador sem bloqueá-lo. Alguém mal-intencionado percebe isso e vai até
+seu computador, apaga diretórios importantes ao sistema e "sai de mansinho". Se você estivesse
+utilizando um usuário comum, isto é, um usuário sem permissões para mexer nesses diretórios,
+aquele sujeito não teria conseguido apagá-los. Ainda há a possibilidade de você cometer algum erro
+e pôr tudo a perder...
+Iniciando o terminal
+Faremos uma mescla para aprendizagem, usaremos o TTY3
+ Para iniciar os comandos no
+linux, porque? Simples, para não correr o risco de você utiizar a interface grafica.
+Pressione CTRL+ALT+F# (# = F1, F2, F3, ... ) para acessar o terminal TTY, não se esqueça
+de logar como root para iniciarmos nossos trabalhos.
+2 http://www.infowester.com/linroot.php
+3 TTY é uma abreviatura de TeleTypewriter
+10 de 35
+Pergunta, depois que você acessou o terminal TTY, como fez para voltar a interface
+gráfica? - pesquise, pergunte e responda abaixo.
+Tanto o terminal na GUI4
+ quanto no CLI5
+ os comandos são os mesmos, pois, usaremos o Shell.
+Iniciando no modo shell com comandos simples.
+Um comando do Linux é uma palavra especial que representa uma ou mais ações. Um
+interpretador de comandos também é conhecido como shell ou modo texto. Ele é o programa
+responsável por interpretar essas instruções enviadas pelo usuário e seus programas para o kernel.
+No Linux, você poderá ter vários interpretadores de comandos (ao contrário do que acontece no
+Windows que só tem o command.com).
+O interpretador de comandos é que executa comandos lidos do teclado ou de um arquivo
+executável. É a principal ligação entre o usuário. Entre os programas interpretadores de comandos
+podemos destacar o bash, csh e sh entre outros.
+Entre eles o mais usado é o Bash (Bourne Again Shell), criado por S.R. Bourne. Os
+comandos podem ser enviados de duas maneiras para o interpretador:
+ Interativa - Os comandos são digitados no teclado pelo usuário e passados ao interpretador de
+comandos um a um. Neste modo o computador depende do usuário para executar uma tarefa ou o
+próximo comando.
+ Não-interativa - São usados arquivos de comandos (scripts) criados pelo usuário para o
+computador executar os comandos na ordem encontrada no arquivo. Neste modo, o computador
+executa os comandos do arquivo um por um, e dependendo do término do comando, o script pode
+verificar qual será próximo comando que será executado e dar continuidade ou não ao
+processamento.
+Sem mais delongas, vamos ao básico, estando com o terminal/shell aberto, há centenas de
+comandos para gerenciar o seu sistema, vamos por partes.
+Lista de Comandos Básicos
+Documentação6
+ ( Ajuda muito na hora da prova prática )
+• man - Formata e exibe uma página man (man page) O comando man é usado para mostrar o
+manual de outros comandos. Tente "man man" para ver a página do manual do próprio man.
+Veja a seção "Man & Getting Help" para mais informações.
+• help - Exibe informações sobre os comandos internos do Bash. Ex.: ”help logout”
+4 GUI: interface gráfica, em que se usa o mouse para clicar em ícones (figuras) e atalhos
+5 CLI: interface em modo texto, em que se digita comandos.
+6 http://wiki.ubuntu-br.org/ComandosBasicos
+11 de 35
+• info - Exibe documentação no formato Info, sendo que a navegação pelo documento é feito
+por meio de comandos internos do Info. Ex.: ”info emacs”
+Data e Hora
+• date - Exibe e edita a data e a hora atuais do sistema.
+• ”date” para exibir a data e hora atual.
+• cal - Exibe um simples calendário.
+• hwclock - Consulta ou define o relógio do hardware (Hardware Clock).
+• "hwclock -s" para atribuir ao sistema a data e hora do hardware (BIOS).
+Informações do Sistema (Hardware e Processos)
+• df – Mostra o espaço em disco do sistema de arquivos usado por todas as partições. "df -h" é
+provavelmente o mais útil - usa megabytes (M) e gigabytes (G) em vez de blocos para
+relatar o tamanhos. (-h significa "human-readable").
+• du – Exibe o tamanho de arquivos e/ou diretórios. Se nenhum arquivo ou diretório for
+passado como argumento, será assumido o diretório atual. O uso da opção du -h tornará a
+apresentação mais simples de ser interpretada.
+• Para verificar o tamanho dos subdiretórios ao invés dos arquivos, utilize o comando
+abaixo.
+"du -k -h --max-depth=1"
+• free – Este comando exibe a quantidade de memória livre e usada no sistema. "free -m"
+fornece a informação usando megabytes, que é provavelmente mais útil para computadores
+atuais.
+• arch – Exibe a arquitetura do computador. Equivale ao comando ”uname -m”.
+• lsdev – Lista o hardware instalado no computador, especificando os endereços de E/S
+(Entrada/Saída), IRQ e canais DMA que cada dispositivo esta utilizando.
+• lspci - Exibe informações sobre os barramentos PCI do computador e sobre os dispositivos a
+ele conectados.
+• lsusb - Lista informações sobre os barramentos USB do computador e sobre os dispositivos
+a eles conectados.
+• uname - Este comando exibe várias informações sobre o sistema, incluindo o nome da
+maquina, nome e versão do Kernel e alguns outros detalhes. É muito útil para verificar qual
+é o Kernel usado por você.
+12 de 35
+• ”uname -a” para exibir todas as informações.
+• ”uname -m” para exibir a arquitetura da maquina. (Equivale ao ”arch”).
+• ”uname -r” para exibir o release do sistema operacional.
+• lsb_release – Este comando fornece informações básicas do sistema operacional (LSB –
+Linux Standard Base) e sua distribuição.
+• ”lsb_release -a” para exibir as informações completas do sistema conforme abaixo
+exemplificado.
+• top - Este comando exibe em tempo real informações sobre seu sistema Linux, processos em
+andamento e recursos do sistema, incluídos CPU, memória RAM e uso do swap, além do
+número total de tarefas sendo executadas.
+• O ”top” também nos permite a manipulação dos processos por meio de comandos
+interativos. Veja abaixo alguns dos comandos interativos mais importantes do ”top”.
+• ”k” - Finaliza, ou seja, “mata” um processo.
+• ”m” - Ativa/Desativa a exibição de informações da memória.
+• ”M” - Ordena os processos pelo uso da memória residente.
+• ”N” - Ordena os processos pelos seus PIDs.
+• ”P” - Ordena os processos pelo uso da CPU (este é o padrão).
+• ”ESPAÇO” - Atualiza imediatamente a visualização do quadro de processos.
+• ”h” - Exibe a ajuda dos comandos interativos do ”top”.
+• ”q” - Abandona o comando ”top”.
+• ps – Apresenta um quadro atual, porém estático dos processos que estão sendo executados
+no sistema.
+• ”ps aux” para apresentar todos processos sendo executados, de todos usuários,
+incluído o nome do usuário a qual o processo pertence, mesmo os desvinculados de
+TTYs.
+13 de 35
+• kill – Finaliza, ou no popular, “mata” processos sendo executados pelo seu PID, lhes
+enviando um sinal.
+• ”kill -9 1345” para finalizar o processo de PID número 1345. Para saber qual PID de
+determinado processo que esta sendo executado pode ser utilizado o comando ps.
+• killall – Finaliza processos pelo nome ao invés do PID como faz o comando kill. Também
+assim como o comando kill, o killall envia um sinal para o processo.
+• ”killall mozilla-firefox” para finalizar o processo mozilla-firefox, fechando com isso
+o navegador web Mozilla Firefox. O nome dos processos ativos pode ser observado
+com uso do comando ps.
+Outros comandos Básicos do linux
+[ você deve conhecer ]
+Para saber mais sobre o comando, digite o [ man "comando" ] dessa forma você abrirá o manual
+do comando utilizado
+• ls: Lista aquivos e diretórios
+• clear: limpa a tela
+• history: mostra todos os comandos digitados no terminal
+• cd : vai para o diretorio especifico
+• pwd: mostra o caminho do diretorio em que voce está
+• |
+7
+ more : lista o arquivo com pause
+• gedit: abre editor modo texto
+• vi: abre o vi para edição de arqui no terminal
+• shutdown: desliga o computador
+• shutdown -r now: reinicia o computador;
+• shutdown -h now: desliga o computador (só desligue quando aparecer escrito "system
+halted" ou algo equivalente); OBS.: O NOW pode ser mudado. Por exemplo: shutdown -r
++10 e o sistema irá reiniciar daqui a 10 minutos).
+• reboot: reinicia o sistema instantaneamente (pouco recomendável, preferível shutdown -r
+now). Use somente em emergências;
+• quando estiver no terminal tty você pode inicializar no terminal X através do comando startx
+• mkdir: cria um diretório
+• rmdir: apaga o diretório VAZIO
+• rm: Apaga um arquivo já o rm -r apaga um diretório
+• hostname: mostra o nome do host logado
+• logname: nome do usuário logado
+• uptime: quanto tempo a maquina está ligado
+Não esqueça, os comandos no LINUX é case sensitive.
+7 | significa pipe, que nada mais é do que um encadeamento de processos. Entendeu?, se não,
+esquenta não, veremos isso na prática.
+14 de 35
+Vamos falar mais um pouquinho sobre os comandos no shell,
+Você já deve ter usado o comando history certo?, qualquer comando no shell interativo fica
+gravado no histórico ou history, a lista de historico é controlada pela variável de shell HISTSIZE,
+por padrão, HISTSIZE é definida para 1000 linhas, mas você pode controlar esse numero, bastando
+ajustar o valor do HISTZISE.
+Os comandos digitados no terminal ficam armazenados em ~/.bash_history, acesse e veja
+todos os comando que você digitou no terminal.
+... e por falar em comandos "básicos", tem comandos que não tem como deixar passar,
+cat, concatena arquivos e exibe na saida padrão
+join, Exibe uma linha para cada par de linas de entrada, uma de aquivo1 e uma de arquivo2 que
+tenham campos de junção ( join ) idênticos.
+Essa função pode ser vista como uma junção bastante simples de tabelas de uma banco de
+dados, na qual dois arquivos tem um indice em comum, assim como terial duas tabelas de banco de
+dados.
+wc; Exibe contagem de caracteres, palavras e linhas para um arquivo, ( veja os argumenos no
+man.
+Cp;
+Copia arquivos.
+cp [opções] [origem] [destino]
+onde:
+origem
+ Arquivo que será copiado. Podem ser especificados mais de um arquivo para ser copiado
+usando "Curingas" (veja [ch-bas.html#s-basico-curingas Curingas, Seção 2.12]).
+destino
+ O caminho ou nome de arquivo onde será copiado. Se o destino for um diretório, os
+arquivos de origem serão copiados para dentro do diretório.
+opções
+O comando cp copia arquivos da ORIGEM para o DESTINO. Ambos origem e destino terão o
+mesmo conteúdo após a cópia.
+Exemplos:
+15 de 35
+cp teste.txt teste1.txt
+ Copia o arquivo teste.txt para teste1.txt.
+cp teste.txt /tmp
+ Copia o arquivo teste.txt para dentro do diretório /tmp.
+cp * /tmp
+ Copia todos os arquivos do diretório atual para /tmp.
+cp /bin/* .
+ Copia todos os arquivos do diretório /bin para o diretório em que nos encontramos no
+momento.
+cp -R /bin /tmp
+ Copia o diretório /bin e todos os arquivos/sub-diretórios existentes para o diretório /tmp.
+cp -R /bin/* /tmp
+ Copia todos os arquivos do diretório /bin (exceto o diretório /bin) e todos os arquivos/subdiretórios existentes dentro dele para /tmp.
+cp -R /bin /tmp
+ Copia todos os arquivos e o diretório /bin para /tmp.
+cp -auv /home/usuario1/pasta1/* /home/usuario2/pasta2/
+ Copia todos arquivos (e sub-pastas) que estão na conta de um usuário para uma pasta de outro.
+Requer privilégios de escrita sobre o diretório destino e, provavelmente, sobre o diretório origem -
+já que ao preservar dono, o comando deixará o destino com o dono original (usuário1) em vez do
+dono desejado (usuário2)
+cp -uvR —-preserve=timestamps /media/CDROM/meubackup/* /home/meubackup/
+ Como vimos acima, o comando natural para restaurar um backup de CD ou DVD seria cp -auv;
+porém aqui ocorre um bug: ao iniciar a cópia com a opção de preservar os atributos de proteção,
+como os CDs e DVDs são read-only, estas opção são marcadas nas pastas criadas, impedindo a
+cópia dos arquivos seguintes. Então a solução é ignorar os atributos exceto os de data (trocando a
+opção -a pela opção --preserve=timestamps) e acrescentando a opção -R (para fazer recursão nos
+subdiretórios).
+mv
+Move ou renomeia arquivos e diretórios. O processo é semelhante ao do comando cp mas o arquivo
+de origem é apagado após o término da cópia.
+mv [opções] [origem] [destino]
+Onde:
+O comando mv copia um arquivo da ORIGEM para o DESTINO (semelhante ao cp), mas após a
+cópia, o arquivo de ORIGEM é apagado.
+Exemplos:
+mv teste.txt teste1.txt
+ Muda o nome do arquivo teste.txt para teste1.txt.
+16 de 35
+mv teste.txt /tmp
+ Move o arquivo teste.txt para /tmp. Lembre-se que o arquivo de origem é apagado após ser
+movido.
+mv teste.txt teste.new (supondo que teste.new já exista)
+ Copia o arquivo teste.txt por cima de teste.new e apaga teste.txt após terminar a cópia.
+Já está quase acabando essa aula, veja, estou colocando a descrição dos comandos mais comuns isso
+não quer dizer que os outros que apenas listei sejam menos importantes, poderei cobra-los em prova
+também, logo, estude todos os comandos, TODOS.
+Comandos como:
+mkdir | rm | rmdir | touch
+esses são imprescindíveis a compreensão e o aprendizado pois você os usará em praticamente tudo
+no terminal linux
+Leia o man de todos eles
+mkdir, cria diretórios, com a opção -p cria, diretórios ascendentes intervenientes, caso eles não
+existam
+rm, apaga um ou mais arquivos no sistema de arquivos, para remover um arquivo voce precisa ter
+permissão de escrita no diretório que o contém, mas, não precisa de permissão de escrita sobre o
+arquivo propriamente dito, o rm com os argumentos -d, -r ou -R, também remove diretórios.
+rmdir, apaga diretório que precisam está vazios, a opçao -p frequentemente usada remove
+qualquer diretório ascendete.
+Fazendo tudo em uma só linha de comando:
+Aqui, estou criando um diretório && em seguida criando um arquivo no direito anteriormente
+criado, tudo, em uma só linha de comando.
+Exercícios
+1. Para você, porque usar linha de comando em vez de interface gráfica no linux?
+2. Como acessar o Terminal TTY1 no Linux?
+3. Quais teclas combinadas são utilizadas para retornar a GUI ( Interface Grafica ) ?
+17 de 35
+4. Como saber mais sobre algum comando no Linux?
+5. O que vem a ser um parâmetro nos comandos do linux?
+6. Qual o comando para saber o caminho completo da pasta onde você se localiza?
+7. Qual a diferença em estar no terminal logado aparecendo o símbolo $ e o simbolo #?
+8. Qual o comando para ver o nome do computador?
+9. Qual o comando para verificar quanto tempo o computador está ligado, "no ar".
+10. Dentro do seu diretório $~home, do seu, não do root, crie um diretório chamado Aulas e
+dentro crie diretórios com os nomes: Informática Aplicada, Redes, MMC e Imagens,
+dentro de imagens uma pasta chamada festas e outro chamado férias. Escreva os passos que
+você utilizou para criação dessas pastas
+11. Qual o comando para pagar todas as pastas/subpastas de uma só vez? Escreve ele aqui:
+12. Dentro do diretório imagens posso criar um diretório chamado Festas e um chamado
+FESTAS, se sim por quê? Se não por quê? Explique, ( aproveite e veja se posso fazer isso
+no windows )e explique os motivos da criação e/ou não criação nos dois sistemas.
+13. Pergunta conceitual, o que é e para que serve o comando history no terminal ?
+14. Escreva a linha de comando para editar o history no linux
+15. Qual o comando para apagar todo o histórico?
+16. Crie dois arquivos, tudo via terminal, arq1 com a numeração linha a linha de 0 a 10 e na
+frente com os nomes de 10 amigos. Agora e crie um arq2 com as mesmas chaves de 0 a 10,
+linha a linha, com o telefone desses 10 amigos apenas o telefone ( fictício ), faça a
+concatenação, descreva todos os comandos que utilizou, desde a criação dos arquivos a
+edição dos nomes até a concatenação dos mesmos. ( apenas comandos )
+17. quantos grupos existem em seu sistema linux? Descreva o comando que utilizou para saber
+essa informação, os grupos estão no diretório /etc/group
+18. Crie um diretório em /home/ chamado departamento, dentro de departamento, outros
+subdiretórios chamados, contabilidade, RH, Diretoria, Jurídico, fábrica ( tudo via linha de
+comando ), dentro de cada um crie 2 arquivos com o mesmo nome, chamado, arq1 e arq2
+para todos os departamentos, feito isso coloque os comandos utilizados no espaço abaixo
+18 de 35
+[tar]8
+ empacotamento do arquivo e não compactação
+de arquivos
+O utilitário tar (Tape ARchiving) agrupa/desagrupa arquivos.
+tar [opções] repositório.tar [arquivos]
+Algumas opções do comando
+-c : cria um novo arquivo tar.
+-j ou --bzip2 : compacta/descompacta os arquivos usando bzip2.
+-J ou --xz : descompacta os arquivos .xz e .lzma.
+-t : lista o conteúdo do arquivo tar.
+-x : extrai o conteúdo do arquivo tar.
+-v : mostra mensagens.
+-f arquivo : define o nome do arquivo tar.
+-z ou --gzip ou --gunzip : compacta/descompacta os arquivos usando gzip/gunzip.
+-Z ou --compress ou --uncompress : compacta/descompacta os arquivos usando compress.
+Para criar o arquivo colecao_txt contendo todos os arquivos txt do diretório atual, basta
+digitar:
+tar cvf colecao_txt *.txt
+Para verificar o conteúdo do arquivo colecao_txt, digite
+tar tvf colecao_txt
+Para extrair todos arquivos de colecao_txt, digite
+tar xvf colecao_txt
+Para extrair apenas um determinado arquivo de colecao_txt, digite
+tar xvf colecao_txt nome_arquivo
+É possível compactar os arquivos agrupados por tar. Por exemplo, para compactar com gzip
+os arquivos que começam por teste no repositório colecao, digite
+tar czvf colecao.tar teste*
+Para compactar com bzip2 os arquivos que começam por teste no repositório colecao2, basta
+digitar
+tar cjvf colecao2.tar teste*
+Normalmente, o bzip2 obtém um maior grau de compactação como mostrado no exemplo
+abaixo.
+8 http://www.uniriotec.br/~morganna/guia/tar.html
+19 de 35
+O PODER DO SHELL:
+Criando vários diretórios e/ou arquivos no Linux
+Como já explicado, as vezes é necessário criar vários arquivos ou diretórios no Linux, caso
+você utilize a GUI9
+ para fazê-lo, precisará fazer enumeras vezes a operação de ( arquivo > novo )
+para criar vários arquivos/diretórios, já estudamos que para criar um arquivo, basta utilizar o
+comando touch bem como um diretório utilizar o comando mkdir, certo? Pois bem, vamos agora
+utilizar um ou outro para criar vários arquivos de uma só vez:
+Imagine que você tenha que criar um diretório chamado ANIMAIS, e dentro desse diretório
+vários e vários animais de uma só vez, como fazer? Bem veja o comando abaixo.
+Eu já me encontro no diretório que quero realizar a operação, no caso, [ ~ ] por isso não faz-se
+necessário o caminho, caso queira criar em outro lugar, basta, colocar o local para onde quer enviar.
+A opção "-p" cria diretórios precedentes.
+Para criar pastas sem subpastas, faça:
+9 graphical user interface
+20 de 35
+Exercícios
+01) Criar em uma só linha de comando dentro o diretório ~ do usuário local os diretórios A B e C
+dentro do diretório inf, o resultado ficará assim:
+01.a) Criar em uma só linha de comando 3 diretórios H I J K L M separadamente dentro de inf
+01.b) Criar em uma só linha de comando: A B e C ( como no exercício 01 ) depois os diretórios H I
+J K L M separadamente dento de inf, tudo em uma só linha de comando.
+O Resultado final será:
+21 de 35
+Em um só comando faça:
+02) crie 2 arquivos: a1.txt a2.txt, ( no home do usuário logado) envie a data e hora do sistema para
+o arquivo a1.txt e nome do computador (uname) para a2.txt; após e na mesma linha de comando,
+crie um repositório tar com o a1.txt e a2.txt com o nome arquivoa1ea2.tar
+Repita a questão 02, compactando os arquivos bzip2 enviando para /tmp
+Para pesquisar: Desafio
+Acesse o Diretório /tmp
+Dentro dele crie 100 arquivos de uma só vez, na sequência, com seu nome e a sequência numérica
+de 0 – 99 com a extensão .doc. EXEMPLO:
+Olhe o exemplo, não precisei criar um a um, com apenas um comando no shell criei todos eles, como?
+22 de 35
+Manipulação de arquivos e diretórios
+Um pouco de teoria, em informática, diretório, diretoria ou pasta é uma estrutura utilizada
+para organizar arquivos em um computador ou um arquivo que contém referências a outros
+arquivos.
+Um diretório pode conter referências a arquivos e a outros diretórios, que podem também
+conter outras referências a arquivos e diretórios. Isso pode se estender bastante. Pode-se ter, por
+exemplo, vinte diretórios, um dentro do outro.
+Os diretórios servem, portanto, para organizar o disco rígido e outras mídias (disquetes, Zip
+disks, CDs, DVDs, cartões de memória, flash drives USB, etc.). Graças a eles, podemos colocar os
+arquivos mais importantes em um canto para que não sejam alterados, agrupar arquivos por dono,
+tipo, ou da forma que for desejada.
+No linux, como saber é diretório ou arquivo ou um link simbolico ou hardlink? Deu nó na
+cabeça? Vem comigo "vamo estudar"!
+Você já sabe entrar no terminal, então, acesse-o pela interface grafica GUI, para ficar mais
+fácil visualizar o que vou pedir.
+Liste os arquivos do diretório raiz /
+Tipos de Arquivos
+Pelo fato do Linux representar tudo como se fosse um arquivo, surgiu a necessidade de se dividir os
+arquivos em tipos distintos. Assim sendo, surgiram os sete tipos de arquivos que existem atualmente
+no Linux. São eles:
+• Arquivos comuns. São, por exemplo, arquivos de texto, arquivos de dados e arquivos
+binários.
+• Diretórios. São arquivos que contêm nomes de outros arquivos que estão armazenados
+ou organizados em grupos.
+• Links. São arquivos que fazem referência a outros arquivos dentro do sistema de
+arquivos. São subdivididos em hard (diretos) e soft (simbólicos) links.
+23 de 35
+• Caractere. São arquivos que representam dispositivos físicos -hardware- que podem
+ser acessados seqüencialmente, como portas paralelas e/ou seriais. Na verdade, são uma
+subdivisão dos device files -arquivos de dispositivos.
+• Bloco. São arquivos que representam dispositivos físicos que podem ser acessados em
+blocos de bytes, como o HD. Assim como os arquivos do tipo caractere, são uma
+subdivisão dos arquivos de dispositivos.
+• Sockets. São arquivos utilizados para comunicação entre processos.
+• Pipes. Também são arquivos utilizados para a comunicação entre processos.
+Normalmente, estes sete tipos são associados, cada um a um caractere, para sua identificação. São
+eles:
+Diante exposto, agora você já sabe identificar cada um dos arquivos listados abaixo.
+24 de 35
+touch E por fim, para criar um arquivo basta usar o comando touch (nome do arquivo)
+Comandos básicos necessários para manipular arquivos e
+diretórios
+cd - Este comando nos permite se deslocar entre a árvore de diretórios do sistema. Quando
+abrimos um terminal ou seção shell, você entra direto no seu diretório pessoal. Para mover-se
+pelo sistema de arquivos você deve usar o cd.
+ "cd /" para ir ao diretório raiz.
+ "cd" para ir ao seu diretório pessoal.
+ "cd .." para acessar um diretório de nível acima do atual.
+ ”cd -” para voltar ao diretório que se encontrava antes de mudar.
+ Para navegar através múltiplos níveis de diretórios em só comando, use por exemplo, "cd
+/var/www", que o levará diretamente ao sub-diretório /www do diretório /var.
+cp – Copia arquivos e diretórios.
+ "cp file file2" para fazer uma cópia exata do arquivo "file" dando-lhe o nome de "foo".
+mv - Este comando move arquivos e diretórios, sendo muito usado também para renomear
+um determinado arquivo.
+25 de 35
+ ”mv arquivo1 arquivo2” para renomear o arquivo “arquivo1” localizado no diretório pessoal do
+usuário para “arquivo2” no mesmo local.
+ "mv foo ~/Desktop" moverá o arquivo "foo" para seu diretório Desktop sem alterar seu nome.
+Você deve especificar um novo nome se quiser renomear um arquivo.
+ls - Comando utilizado para listar o conteúdo de um diretório. Usado com certas opções, é
+possível ver o tamanho dos arquivos, quando foram criados, e as permissões de cada um.
+ "ls ~" para mostrar os arquivos que estão em seu diretório pessoal.
+ ”ls -hal ~” para mostrar os arquivos que estão em seu diretório pessoal, inclusive os ocultos (-a)
+em forma de uma listagem (-l) e com as informações de tamanho mais amigável a nós seres
+humanos (-h).
+rm - Utilize este comando para remover (deletar) arquivos e opcionalmente diretórios. Por
+padrão o comando rm exibe um prompt onde o usuário deve confirmar a exclusão de cada
+arquivo, digitando a letra “y” seguido de “Enter”.
+ ”rm arquivo1” para remover o arquivo chamado “arquivo1” do diretório corrente após
+confirmação no prompt.
+ ”rm -f arquivo1” para remover o arquivo chamado “arquivo1” do diretório corrente sem que lhe
+seja exibido o prompt de confirmação.
+ ”rm -R ~/temp/” para remover de forma recursiva o diretório /temp localizado em sua pasta
+pessoal e todo seu conteúdo, seja ele arquivos e outras arvores de sub-diretórios.
+mkdir - Comando cuja finalidade é permitir a criação de um ou mais diretórios.
+ "mkdir musicas" para criar um diretório chamado “musicas” dentro do diretório corrente.
+26 de 35
+Link Simbólico e HardLink, ainda manipulando arquivos e
+diretórios
+O link é um mecanismo que faz referência a outro arquivo ou diretório em outra
+localização. Os links são arquivos especiais e podem ser identificados com um "l" quando
+executado o comando: "ls -la".
+No link tipo simbólico, o link é um arquivo especial de disco do tipo link, que tem como
+conteúdo o caminho para chegar até o arquivo alvo.
+Características:
+• Pode-se fazer links simbólicos em arquivos e diretórios;
+• O link simbólico e o arquivo alvo não precisam estar na mesma partição de disco;
+• Se o link simbólico for apagado/movido. Somente o link será apagado/movido;
+• Qualquer usuário pode criar/desfazer um link simbólico (respeitando as permissões).
+No link tipo hardlink, o link é apontado para o mesmo inode do arquivo alvo, sendo assim,
+os dois arquivos serão o mesmo.
+Características:
+• Não é possível fazer um hardlink para um diretório;
+• Somente é possível fazer hardlink em arquivos que estejam em uma mesma partição de
+disco;
+• Se o hardlink for apagado/movido, você estará apagando/movendo o arquivo alvo;
+• Somente o usuário root pode criar/desfazer hardlink
+Criando um Link Simbolico, Exemplo:
+aqui, dentro do meu /home estou criando um arquivo chamado arquivo.txt e na sequencia
+usando o pipe | faço um link simbolico para o mesmo diretório, olha como fica o comando ln -s
+27 de 35
+( simbolico ) nome do arquivo e o nome dele no link simbólico linkdoArquivo.txt, de um ls -la e
+veja como ele fica n terminal.
+Na cor, azul, veja o link simbolico (l)
+se você for no diretório onde ele se encontra, verá uma seta, indicando que aponta para outro lugar.
+Exercícios
+Descreva os passos de todos os exercícios nos seus respectivos formulários, salve como copia e me envie.
+1. O que é um diretório mesmo?
+2. Crie um diretório no seu /home com seu primeiro nome detro dele crie um arquvivo de
+texto deverá ter seu sobrenome e coloque dentro do /home/"seunome"/
+3. Qual o comando para criar arquivo mesmo?
+4. Crie um novo diretorio, agora com o nome InfoApp em /home, dentro crie um arquivo
+chamado auladeinfo.txt
+5. Agora, pegue o auladeinfo.txt e mova para o diretório que você cirou da questão 2, leia o
+comando MOVA,
+6. Agora, pegue o arquivo que você moveu e copie para o /home/backup ( crie o diretório claro
+)
+7. qual comando apaga tudo que foi criado? Mostre que você entendeu, coloque o comando
+abaixo
+28 de 35
+8. Qual o parametro utilizado para se fazer a exclusão de um conjunto de diretorios, ou seja,
+"pasta sobre pasta"
+9. Crie um diretório em seu home, chamado DiretorioLink, dentro, crie um arquivo com
+seu_primeiro_nome.txt.
+10. Agora, depois de feito o item9 faça um link simbolico dentro do diretório /home/
+(seu_home)/Links
+11. coloque seu nome completo dentro o arquivo criado, porem acessando o arquivo através do
+link simbolico e não do arquivo original.
+12. Apague o arquivo original criado no item9 e tente acessar o link criado no item10, o que
+aconteceu? Explique,
+13. Relacione os diretórios com seus respectivos conteúdos.
+01 / Arquivos de confiurações locais da áłquina
+02 /bin Contéá os diretórios pessoais dos usułrios
+03 /boot Hierarquia secundłria de diretórios
+04 /dev Diretório de arquivos teáporłrios
+05 /etc Bibliotecas dinâáicas
+06 /hoáe Kernel do Linux áais arquivos estłticos do carriador do
+boot
+07 /lib Ponto de áontaieá para sisteáas de arquivos
+teáporłrios
+08 /ánt Coáandos executłvies, necessłrios para coápletar o
+boot e para utilização do sisteáa
+09 /sbin Diretório de docuáentação de softwares instalados
+10 /táp Arquivos e coáandos adicionais, noráaláente utilizados
+pelo adáinistrador e para coápletar o boot
+11 /usr Caixas de correio dos usułrios
+12 /usr/share/doc Arquivos de taáanho variłvel coáo spool e loi
+13 /var Diretório raiz onde coáeça a estrutura de arquvivos
+inteiro
+14 /var/spool/áail Arquivos de acesso a dispositivos do sisteáa
+29 de 35
+Permissões de Arquivos e Diretórios no Linux
+Penso eu que, se você já está aqui, nesse capitulo tenho certeza que como um bom estudante
+você já leu e praticou todos os exercícios dessa a apostila, se não, volte, leia e depois volta aqui, se
+não fica bem mais difícil para entender.
+Permissões10:
+Cada arquivo possui, associado a ele, um conjunto de atributos e um deles são as
+permissões relativas a ele próprio. Estas permissões podem ser entendidas como um número de 12
+bits onde, obviamente, cada bit pode variar entre zero e um, indicando a ausência ou presença de
+uma permissão específica vou mostrar que as permissões se subdividem em grupos e cada bit
+representa um tipo de permissão específico[1]. Vamos?
+A primeira divisão que pode ser feita neste número de 12 bits, separa três bits para
+determinar os atributos do arquivo, seção 3, e o restante -9 bits- para a determinação da proteção
+do arquivo.
+10 http://www.vivaolinux.com.br/artigo/Permissoes-no-Linux?pagina=1
+30 de 35
+Bits de atributo
+Os bits de atributo definem um controle adicional às permissões de proteção do arquivo[2]
+Os atributos de um arquivo são três e cada um deles desempenha uma função bem
+específica. O primeiro é conhecido como bit setuid, que, se estiver ativado -valor igual a um-, faz
+com que o arquivo seja executado como se o fosse pelo seu dono -não faz sentido para diretórios.
+O segundo atributo é o bit setgid, que, se estiver ativado, faz com que o arquivo seja
+executado como se o fosse por um membro do grupo do seu dono -todo arquivo criado em um
+diretório com o bit setgid ativado, é criado com o mesmo grupo do diretório.
+Por fim, o terceiro atributo é conhecido como bit sticky e, se estiver ligado, faz com que o
+arquivo possa ser apagado apenas pelo seu dono. Um grande exemplo da utilização deste bit de
+atributo está no diretório /tmp, onde todos os usuários cadastrados no sistema podem utilizar o
+diretório livremente. Contudo, nenhum usuário pode apagá-lo, visto que ele pertence ao super usuário -root-
+e possui o seu bit sticky ligado. Sendo assim, pode ser apagado apenas pelo usuário
+root.
+Faça um teste, como root, crie um arquivo ( arquivo.txt) dentro do /tmp ( como
+root ). Em seguida, desconecte o usuário root e tente apagalo como usuário comum $.
+o que aconteceu?
+Desta maneira, pode-se reescrever os bits de atributo com sua notação simbólica, onde, da
+esquerda para a direita, os bits podem substituídos por letras que os simbolizam. O primeiro bit
+pode ser substituído por um 's', que simboliza o bit setuid, o segundo bit pode ser substituído por
+outro 's', que simboliza o bit setgid e o terceiro bit, por um 't', que simboliza o bit sticky, assim
+como mostrado abaixo.
+31 de 35
+Bits de proteção
+Os bits de proteção definem as proteções básicas de cada arquivo
+(leitura -read-, escrita -write- e execução -execution-). rwx
+ A ativação, ou não, de cada um destes bits define quem pode visualizar -ler- o arquivo, quem
+pode alterá-lo/apagá-lo -escrever- e/ou executá-lo -executar-.
+Assim como os bits de atributo, há uma subdivisão destes bits em três grupos de três bits
+cada, o que define as permissões:
+• para o dono do arquivo (primeiros três bits, da esquerda para a direita),
+• as permissões para os membros do mesmo grupo do dono do arquivo (os três bits da
+seqüência)
+• e as permissões para os outros usuários do sistema (últimos três bits)
+Deste modo pode-se perfeitamente definir o que cada tipo de usuário pode fazer com o arquivo.
+Depois que você entendeu a teoria, vamos a coisa prática, lembra das conversões de base? -
+vamos usar aqui para “teorizar” as permissões linux.
+Até agora, o leitor foi apresentado a duas formas de notação das permissões -duas formas
+distintas de representar as permissões-, a notação binária, que identifica as permissões como um
+número de 12 bits, onde cada bit representa uma permissão específica -direito do dono ler o
+arquivo, direito de membros do grupo do dono alterarem o arquivo, privilégio para apenas o dono
+excluir o arquivo e etc.-. Assim tem-se um número como 000000000000 representando as
+permissões.
+Uma outra notação vista foi a simbólica, que em vez de utilizar bits, utiliza caracteres para
+representar cada permissão específica, gerando algo como sstrwxrwxrwx.
+Entretanto, representar permissões desta maneira é muito entediante para as pessoas, além de
+ser muito suscetível a erros -quanto mais caracteres para escrever, maior a possibilidade de errar-.
+32 de 35
+Por isso, resolveu-se criar um tipo de notação onde se pudesse representar as mesmas permissões,
+mas utilizando-se de menos caracteres. Foi aí que surgiu a notação octal.
+Como já foi visto, a representação das permissões utilizando a notação binária, logicamente
+divide as permissões em três bits para atributos especiais e nove para os atributos de proteção. Por
+sua vez, os atributos de proteção são subdivididos em três grupos de três bits cada, representando os
+privilégios para o dono do arquivo, para os membros do mesmo grupo do dono do arquivo e para os
+outros usuários do sistema. Assim, tem-se um número de 12 bits que representa as permissões
+dividido em quatro grupos de três bits (000000000000 -> 000 000 000 000).
+Ora, basta ter alguma noção de conversão de bases entre números, para saber que três bits
+é a quantidade exata de bits necessária para se representar números na base octal (também chamada
+de base oito, porque utiliza oito algarismos para representar seus dígitos -de zero a sete-).
+Assim sendo, em vez de se representar as permissões na notação binária como quatro
+seqüências de três bits -12 dígitos-, pode-se representar as mesmas permissões na notação octal,
+que utiliza um dígito para cada uma das quatro seqüências, totalizando em quatro dígitos para se
+representar todas as permissões. Desta forma, em vez de se utilizar de 12 algarismos para
+representar as permissões, pode-se utilizar apenas quatro, o que diminui a probabilidade de erros.
+Assim, as pearmissões (001 111 100 100) na base dois e (1 7 4 4) na base oito são logicamente
+iguais -basta converter cada seqüência de três bits da base dois para a base oito-.
+É importante que se entenda bem cada uma destas notações, pois cada uma tem uma
+utilidade. A notação binária é boa para se entender o funcionamento das permissões, a notação
+simbólica é boa para se representar as permissões de um arquivo e a notação octal é boa para se
+manipular permissões de arquivos.[3]
+As tabelas a seguir mostram a representação das permissões em cada uma das três notações
+vistas. A tabela 01 mostra os bits de atributo, enquanto a tabela 02 mostra os bits de proteção -como
+os três grupos de proteção são representados da mesma forma, não é necessário ter uma tabela para
+cada grupo.
+Alterar permissões de Arquivos e pastas/diretórios
+33 de 35
+Não há como estudar o sistema linux sem as teorias, mais um pouquinho pra gente ir pra
+prática, vamos.[4]
+chmod – Altera as permissões de acesso de arquivos e diretórios, não alterando estes
+atributos de links simbólicos passados na linha de comando, mais sim as permissões dos arquivos
+aos quais eles se referem. Para maiores detalhes sobre o sistema de permissões de arquivos e
+diretórios no Linux aconselho este link aqui do Guia Foca GNU/Linux.
+”chmod 744 ile” para alterar as permissões do arquivo “file” de modo ao Dono ter
+total permissão (leitura, execução e escrita) enquanto que os usuários pertencentes ao Grupo e os
+Outros terão permissão apenas de leitura.
+• ”chmod -R 744 temp/” para alterar as permissões de forma idêntica ao exemplo
+anterior, porém do sub-diretório /temp e todo seu conteúdo de forma recursiva
+Exercícios
+1. Se eu criar um arquivo dentro do /tmp com um usuário root, posso apagar com um outro
+usuário ? Faça o teste. Explique o porque? Se der alguma mensagem no terminal, copie-a
+aqui e explique.
+2. Represente a permissão do aqruivo da figura abaixo em octal
+3. Demonstre permisão 743 em simbolico e binário, escreva abaixo.
+4. Qual o simbolo que vem para marcar um diretório?
+5. Esse é pratico: crie um diretorio chamado permissão em /tmp com usuário comun$ |
+depois crie um arquivo chamado permiss.txt dentro do diretório criado. Quais os comandos
+foram utilizados? Descreva
+6. Ainda, utilizando o item5, qual comando você verifica as permissões do arquivo criado,
+permiss.txt? ( verificar apenas do arquivo criado), escreva
+7. Agora, tire as permissões de leitura do arquivo permiss.txt, qual ou quais comandos usou?
+8. Como fica na notação octal e binária para a permissão para um arquivo,
+-[r--][-wx][-w-]
+34 de 35
+9. qual o comando para reritar as permissões de leitura e qual o comando para adicionar as
+permissões de leitura?
+35 de 35
+Bibliografia Básica
+[1] J. L. O. Junior, “Permissões Linux”, Viva o Linux, 19-maio-2006. [Online]. Available at:
+http://www.vivaolinux.com.br/artigo/Permissoes-no-Linux?pagina=1. [Acessado: 19-mar2010].
+[2] C. Eduardo Morimoto, Entendendo e dominando o Linux, 3o
+ ed. São Paulo, 2004.
+[3] A. Rodrigues Bonan, Configurando e usando o sistema operacional Linux. São Paulo:
+Berkeley, 2002.
+[4] “Ubuntu, comandos básicos”, Wiki.Ubuntu, 2014. [Online].
+Available at: http://wiki.ubuntu.br.org/ComandosBasicos. [Acessado: 23-abr-2014].

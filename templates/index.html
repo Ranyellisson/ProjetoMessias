@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Online</title>
+    <style>
+        header {
+            background-color: white;
+            color: black;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 30px;
+            height: 80px;
+        }
+        body{
+            max-width: 800px;
+            margin: auto;
+            font-size: 20px;
+            padding: 20px;
+            background-color: gray;
+        }
+        pre {
+            white-space: pre-wrap;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        .ima{
+            width: 80%;
+            margin: 0 auto;
+        }
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ima">
+            <img src="{{ url_for('static', filename='icone_linux.jpg')}}">
+            <h1>livro de linux</h1>
+        </div>
+    </header>
+    <!--Aqui chama a função e retrona o texto-->
+    <br>
+    <pre>{{linux | safe }}</pre>
+    <div>
+        <nav><div></div></nav>
+    </div>
+    
+</body>
+</html>

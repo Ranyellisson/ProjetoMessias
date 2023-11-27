@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: -webkit-gradient(linear, left top, right top, from(#CCCCCC), to(#000000)) no-repeat;
+            background: -moz-linear-gradient(left, #CCCCCC, #000000);
+            filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#CCCCCC', EndColorStr='#000000');
+            width: 100%;
+            height: 100%;
+            padding: 16px;
+            border: solid 2px;
+        }
+        h2 {
+            color: brown;
+            font-size: 30px;
+            text-align: center;
+        }
+        .org {
+            width: 100%;
+            padding: 5px;
+
+        }
+        .livro{
+            float: left;
+            width: 96%;
+            height: 300%;
+            margin-left: 2%;
+            margin-bottom: 10px;
+
+        }
+        @media only screen and (min-width: 769px){
+            .livro{
+            float: left;
+            width: 18%;
+            height: 100%;
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-right: 3%;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Catálogo de Livros</h2>
+    </header>
+    <div class="org">
+        <div class="livro">
+            <img src="{{ url_for('static', filename='pythonimgl.png') }}" alt="Capa do Livro ">
+            <h3><a href="">Livro de Python</a></h3>
+            <p>Autor: Autor do Livro 1</p>
+            <p>Aprenda sobre python uma linguagem de auto nível muito utilizada no mundo.</p>
+        </div>
+
+        <div class="livro">
+            <img src="{{ url_for('static' , filename='javaicone.jpg' ) }}" alt="Capa do Livro ">
+            <h3><a href="">Livro de Java</a></h3>
+            <p>Autor: Autor do Livro 2</p>
+            <p>Aqui você vai aprender do zero ao avançado numa das linguaguem de programação mais usadas em todo mundo.</p>
+        </div>
+
+        <div class="livro">
+            <a href="index.html"><img src="{{ url_for('static' , filename='linuxicone.png' ) }}" alt="Capa do Livro ">
+            <h3>Livro de linux</h3></a>
+            <p>Autor: Autor do Livro 3</p>
+            <p>Aqui você vai aprender a dar primeiros passoas em linux.</p>
+        </div>
+
+        <div class="livro">
+            <img src="{{ url_for('static' , filename='introducprogramacao.jpg' ) }}" alt="Capa do Livro ">
+            <h3><a href="">Livro de Introdução à programação</a></h3>
+            <p>Autor: Autor do Livro 4</p>
+            <p>Aqui você vai aprender como íniciar na carreira de programação.</p>
+        </div>
+
+        <div class="livro">
+            <img src="{{ url_for('static' , filename='logicaprogramacicone.jpg' ) }}" alt="Capa do Livro ">
+            <h3><a href="">Livro de Lógica de programação</a></h3>
+            <p>Autor: Autor do Livro 5</p>
+            <p>Aqui você vai aprender lógica de maneira detalhada e ótimas explicações.</p>
+        </div>
+
+        <div class="livro">
+            <img src="{{ url_for('static' , filename='orientaçãoobjetojava.jpg' ) }}" alt="Capa do Livro ">
+            <h3><a href="">Livro de Java orientado a objetos</a></h3>
+            <p>Autor: Autor do Livro 6</p>
+            <p>Aqui você vai aprender muito com java orientação a objetos, aproveite!</p>
+        </div>
+    </div>
+    <!-- Adicione mais livros conforme necessário -->
+
+</body>
+</html>
